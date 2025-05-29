@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    const targetHost = "lecy.cc";
+    const path = window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace("https://" + targetHost + path);
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a id="redirect-link" href="#">lecy.cc</a>...</p>
+  <script>
+    const fullUrl = "https://" + targetHost + window.location.pathname + window.location.search + window.location.hash;
+    document.getElementById("redirect-link").href = fullUrl;
+  </script>
+</body>
+</html>
